@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "FVRAvZD3TYyrgK5l1uK9yA0n1B8a89FnliqXJPSPgJDRZ/zbFQdfTpSEcGkz4NtahB6z55EZJPFJ048nSAylIg==",
+  "success": true,
+  "projectFilePath": "/Users/nguyenmautuan/Documents/C#/Saga-pattern/ChoreographyBased/Core/Core.csproj",
+  "expectedPackageFiles": [
+    "/Users/nguyenmautuan/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
+    "/Users/nguyenmautuan/.nuget/packages/rabbitmq.client/6.2.2/rabbitmq.client.6.2.2.nupkg.sha512",
+    "/Users/nguyenmautuan/.nuget/packages/system.memory/4.5.4/system.memory.4.5.4.nupkg.sha512",
+    "/Users/nguyenmautuan/.nuget/packages/system.threading.channels/4.7.1/system.threading.channels.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}
