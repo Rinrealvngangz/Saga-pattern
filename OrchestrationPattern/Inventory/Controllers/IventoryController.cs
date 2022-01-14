@@ -12,11 +12,16 @@ namespace Inventory.Controllers
     public class IventoryController : ControllerBase
     {
         [HttpPost]
-        public int Update([FromBody] Inventory inventory)
+        public InventoryResponse Update([FromBody] Inventory inventory)
         {
-            throw new Exception("Error create order");
+           // throw new Exception("Error create order");
             Console.WriteLine($"Update inventory name:{inventory.Name}");
-            return 3;
+            return new InventoryResponse
+            {
+                id = 22,
+                Success = true,
+                Reason = ""
+            };
         }
 
         [HttpDelete("{id}")]

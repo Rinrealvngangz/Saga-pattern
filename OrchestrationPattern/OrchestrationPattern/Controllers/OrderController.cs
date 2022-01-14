@@ -23,41 +23,22 @@ namespace OrchestrationPattern.Controllers
         [HttpPost]
         public async Task<OrderResponse> Post([FromBody] Order order)
         {
-            var request = JsonConvert.SerializeObject(order);
-           var orderClient = _httpClientFactory.CreateClient("Order");
-          var orderResponse = await orderClient.PostAsync("/api/order",
-                                new StringContent(request,Encoding.UTF8,"application/JSON"));
-          var orderId = await  orderResponse.Content.ReadAsStringAsync();
-          string inventoryId = string.Empty;
-          try
-          {
-              var inventoryClient =  _httpClientFactory.CreateClient("Inventory");
-              var inventoryResponse = await inventoryClient.PostAsync("/api/iventory",
-                  new StringContent(request, Encoding.UTF8, "application/JSON"));
-              if (inventoryResponse.StatusCode != HttpStatusCode.OK)
+           var orderManager = new OrderManager();
+          var isSuccess = orderManager.CreatOrder(order, _httpClientFactory);
+          return isSuccess
+              ? new OrderResponse
               {
-                  throw new Exception(inventoryResponse.ReasonPhrase);
+                  id = 100,
+                  Success = true,
+                  Reason = "Thanh cong"
               }
-              inventoryId = await inventoryResponse.Content.ReadAsStringAsync();
-          }
-          catch (Exception e)
-          {
-              await orderClient.DeleteAsync($"/api/order/{orderId}");
-              return new OrderResponse
+              : new OrderResponse
               {
-                  id = orderId,
-                  Success = "false",
-                  Reason = e.Message
+                  id = 0,
+                  Success = false,
+                  Reason = "That bai"
               };
 
-          }
-      
-         var notifyClient =  _httpClientFactory.CreateClient("Notify");
-        var notifyResponse = await notifyClient.PostAsync("/api/notify",
-             new StringContent(request, Encoding.UTF8, "application/JSON"));
-        var notifyId = await notifyResponse.Content.ReadAsStringAsync();
-        Console.WriteLine($"Orderid:{orderId} - inventoryId :{inventoryId} - notifyId :{notifyId}");
-        return new OrderResponse{id = orderId,Success = "success"};
         }
     }
 }

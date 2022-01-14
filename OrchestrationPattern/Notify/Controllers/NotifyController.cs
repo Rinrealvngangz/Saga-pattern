@@ -12,10 +12,15 @@ namespace Notify.Controllers
     public class NotifyController : ControllerBase
     {
         [HttpPost]
-        public int NotifySuccess([FromBody] Notify notify)
+        public NotifyResponse NotifySuccess([FromBody] Notify notify)
         {
             Console.WriteLine($"Send nofication for product: {notify.Name}");
-            return 2;
+            return new NotifyResponse
+            {
+                id = 3,
+                Success = true,
+                Reason = ""
+            };
         }
 
         [HttpDelete("{id}")]

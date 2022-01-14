@@ -10,7 +10,8 @@
         "dependencies": {
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.1",
           "Newtonsoft.Json": "13.0.1",
-          "Swashbuckle.AspNetCore": "6.2.3"
+          "Swashbuckle.AspNetCore": "6.2.3",
+          "stateless": "5.11.0"
         },
         "runtime": {
           "OrchestrationPattern.dll": {}
@@ -1199,6 +1200,14 @@
       "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
+      "stateless/5.11.0": {
+        "runtime": {
+          "lib/net5.0/stateless.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "5.11.0.0"
+          }
+        }
+      },
       "Swashbuckle.AspNetCore/6.2.3": {
         "dependencies": {
           "Microsoft.Extensions.ApiDescription.Server": "3.0.0",
@@ -2474,6 +2483,13 @@
       "sha512": "sha512-VB5cn/7OzUfzdnC8tqAIMQciVLiq2epm2NrAm1E9OjNRyG4lVhfR61SMcLizejzQP8R8Uf/0l5qOIbUEi+RdEg==",
       "path": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "hashPath": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512"
+    },
+    "stateless/5.11.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5XXmdEQBOpgE90vqxfZH0ekdqfGB6xLe0Uyb7EyHr/fgv/zkZtDcru4KxRvAvWxE1u4c8MOZnOnXoRfQOfFnTg==",
+      "path": "stateless/5.11.0",
+      "hashPath": "stateless.5.11.0.nupkg.sha512"
     },
     "Swashbuckle.AspNetCore/6.2.3": {
       "type": "package",

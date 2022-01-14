@@ -1,6 +1,6 @@
-namespace OrchestrationPattern;
+namespace Inventory;
 
-public class OrderResponse  
+public class InventoryResponse
 {
     public int id  { get; set; }
     public bool Success  { get; set; }

@@ -1460,6 +1460,15 @@
           }
         }
       },
+      "stateless/5.11.0": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/stateless.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/stateless.dll": {}
+        }
+      },
       "Swashbuckle.AspNetCore/6.2.3": {
         "type": "package",
         "dependencies": {
@@ -4954,6 +4963,30 @@
         "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
         "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.nuspec",
         "runtimes/ubuntu.16.10-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
+      ]
+    },
+    "stateless/5.11.0": {
+      "sha512": "5XXmdEQBOpgE90vqxfZH0ekdqfGB6xLe0Uyb7EyHr/fgv/zkZtDcru4KxRvAvWxE1u4c8MOZnOnXoRfQOfFnTg==",
+      "type": "package",
+      "path": "stateless/5.11.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Stateless.png",
+        "lib/net40/stateless.dll",
+        "lib/net40/stateless.xml",
+        "lib/net45/stateless.dll",
+        "lib/net45/stateless.xml",
+        "lib/net472/stateless.dll",
+        "lib/net472/stateless.xml",
+        "lib/net5.0/stateless.dll",
+        "lib/net5.0/stateless.xml",
+        "lib/netstandard1.0/stateless.dll",
+        "lib/netstandard1.0/stateless.xml",
+        "lib/netstandard2.0/stateless.dll",
+        "lib/netstandard2.0/stateless.xml",
+        "stateless.5.11.0.nupkg.sha512",
+        "stateless.nuspec"
       ]
     },
     "Swashbuckle.AspNetCore/6.2.3": {
@@ -8787,7 +8820,8 @@
     "net6.0": [
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.1",
       "Newtonsoft.Json >= 13.0.1",
-      "Swashbuckle.AspNetCore >= 6.2.3"
+      "Swashbuckle.AspNetCore >= 6.2.3",
+      "stateless >= 5.11.0"
     ]
   },
   "packageFolders": {
@@ -8838,6 +8872,10 @@
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.2.3, )"
+          },
+          "stateless": {
+            "target": "Package",
+            "version": "[5.11.0, )"
           }
         },
         "imports": [

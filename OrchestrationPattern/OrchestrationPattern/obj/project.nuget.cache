@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "qDGs0hpnR9pk0QvQBJmsxQR0S3+gQRVdcEQfJtd87iaMRZL5QImJIOs/WTDTc9YDvMRwLIgSwrjw04CtdlwhyA==",
+  "dgSpecHash": "eJtX+AdvIOqBoLK8ziBvAuL099W0h55nHPdqhlawAaLerkuv8/7LWTQS/uKrycwiF10686JnXSqBfivkys3+nw==",
   "success": true,
   "projectFilePath": "/Users/nguyenmautuan/Documents/C#/Saga-pattern/OrchestrationPattern/OrchestrationPattern/OrchestrationPattern.csproj",
   "expectedPackageFiles": [
@@ -76,6 +76,7 @@
     "/Users/nguyenmautuan/.nuget/packages/runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "/Users/nguyenmautuan/.nuget/packages/runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "/Users/nguyenmautuan/.nuget/packages/runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
+    "/Users/nguyenmautuan/.nuget/packages/stateless/5.11.0/stateless.5.11.0.nupkg.sha512",
     "/Users/nguyenmautuan/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "/Users/nguyenmautuan/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
     "/Users/nguyenmautuan/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",

@@ -1,6 +1,6 @@
-namespace OrchestrationPattern;
+namespace Notify;
 
-public class OrderResponse  
+public class NotifyResponse
 {
     public int id  { get; set; }
     public bool Success  { get; set; }

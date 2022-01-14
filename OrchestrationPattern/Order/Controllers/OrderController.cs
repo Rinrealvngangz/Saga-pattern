@@ -12,10 +12,15 @@ namespace Order.Controllers
     public class OrderController : ControllerBase
     {
         [HttpPost]
-      public  int CreateOrder([FromBody] Order order)
+      public  OrderResponse CreateOrder([FromBody] Order order)
       {
           Console.WriteLine($"Create order with name: {order.Name} - quantity {order.Quantity}");
-          return 1;
+          return new OrderResponse
+          {
+              id = 1,
+              Success = true,
+              Reason = ""
+          };
       }
 
       [HttpDelete("{id}")]

@@ -230,3 +230,4 @@
 /Users/nguyenmautuan/Documents/C#/Saga-pattern/OrchestrationPattern/OrchestrationPattern/obj/Debug/net6.0/ref/OrchestrationPattern.dll
 /Users/nguyenmautuan/Documents/C#/Saga-pattern/OrchestrationPattern/OrchestrationPattern/obj/Debug/net6.0/OrchestrationPattern.pdb
 /Users/nguyenmautuan/Documents/C#/Saga-pattern/OrchestrationPattern/OrchestrationPattern/obj/Debug/net6.0/OrchestrationPattern.genruntimeconfig.cache
+/Users/nguyenmautuan/Documents/C#/Saga-pattern/OrchestrationPattern/OrchestrationPattern/bin/Debug/net6.0/stateless.dll
